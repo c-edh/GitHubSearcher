@@ -142,17 +142,15 @@ extension UsersViewModel: NetworkAPIProtocol{
             print("error retrieving data, failed on viewmodel")
             return
         }
-        
-       // self.users = []
 
-            for user in userData.items{
+        print("this ran")
+            for user in userData.items ?? []{
                 users.append(user)
             }
             
+
         
-        //self.users = userData
-        
-        print(userData.items.count)
+       // print(userData.items![0])
         delegate?.updateUI(nil)
     }
     

@@ -203,12 +203,10 @@ class NetworkAPI{
     private func decodeSearchData(_ data: Data) -> UsersModel?{
         
         let decoder = JSONDecoder()
-        
         do{
-            let users = try decoder.decode(UsersModel.self, from: data)
-            return users
+            return try decoder.decode(UsersModel.self, from: data)
         }catch{
-            print("Error decoding JSON:\n\(error)")
+            print("Error decoding JSON:\n\(error),\(error.localizedDescription)")
             return nil
         }
         

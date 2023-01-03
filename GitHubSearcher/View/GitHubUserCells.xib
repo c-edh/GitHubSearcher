@@ -18,7 +18,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tJA-mM-9gS">
-                        <rect key="frame" x="5" y="0.0" width="382" height="101"/>
+                        <rect key="frame" x="0.0" y="0.0" width="392" height="101"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PYl-xs-gBd">
                                 <rect key="frame" x="0.0" y="0.0" width="100" height="101"/>
@@ -37,13 +37,13 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCM-GO-Clm">
-                                <rect key="frame" x="105" y="40.333333333333336" width="172" height="20.333333333333336"/>
+                                <rect key="frame" x="105" y="40.333333333333336" width="182" height="20.333333333333336"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Wp-i5-CCI">
-                                <rect key="frame" x="277" y="40.333333333333336" width="100" height="20.333333333333336"/>
+                                <rect key="frame" x="287" y="40.333333333333336" width="100" height="20.333333333333336"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="N3P-gy-AnE"/>
                                 </constraints>
@@ -61,11 +61,11 @@
                     </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="tJA-mM-9gS" secondAttribute="trailing" constant="5" id="88e-sE-rr9"/>
+                    <constraint firstAttribute="trailing" secondItem="tJA-mM-9gS" secondAttribute="trailing" id="88e-sE-rr9"/>
                     <constraint firstItem="tJA-mM-9gS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="93v-MP-alU"/>
                     <constraint firstAttribute="trailing" secondItem="tJA-mM-9gS" secondAttribute="trailing" constant="5" id="BRI-0F-pmc"/>
                     <constraint firstAttribute="bottom" secondItem="tJA-mM-9gS" secondAttribute="bottom" id="Tsx-Ja-lBQ"/>
-                    <constraint firstItem="tJA-mM-9gS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="bYL-SV-Rft"/>
+                    <constraint firstItem="tJA-mM-9gS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="bYL-SV-Rft"/>
                     <constraint firstItem="tJA-mM-9gS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="gy9-GZ-svu"/>
                 </constraints>
             </tableViewCellContentView>

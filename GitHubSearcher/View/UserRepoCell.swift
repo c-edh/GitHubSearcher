@@ -29,8 +29,8 @@ class UserRepoCell: UITableViewCell {
         
         repoName.text = repo.name
         
-        repoStars.text = "Stars:\n\(repo.stars)"
-        repoForks.text = "Forks:\n\(repo.forks)"
+        repoStars.text = "Stars:\n\(repo.stars ?? 0)"
+        repoForks.text = "Forks:\n\(repo.forks ?? 0)"
         
         
     }

@@ -11,13 +11,16 @@ import Foundation
 
 //MARK: - Users list model
 class UsersModel : Codable {
-    var items : [UserItems]
+    var items : [UserItems]?
+    enum CodingKeys: String, CodingKey {
+        case items = "items"
+    }
 }
 
 
 class UserItems : Codable{
-    var userName : String
-    var avatar : String
+    var userName : String?
+    var avatar : String?
     var userDetail : UserDetail?
     
     private enum CodingKeys : String, CodingKey{
@@ -56,9 +59,9 @@ class UserDetail : Codable{
 
 struct ReposModel : Codable{
     
-    var name : String
-    var stars : Int
-    var forks : Int
+    var name : String?
+    var stars : Int?
+    var forks : Int?
     
     private enum CodingKeys : String, CodingKey{
         case name = "name"
@@ -72,13 +75,13 @@ struct ReposModel : Codable{
 
 //MARK: - User repo search model
 struct RepoSearchModel : Codable{
-    var items : [Items]
+    var items : [Items]?
 }
 
 struct Items : Codable{
-    var name : String
-    var stars : Int
-    var forks : Int
+    var name : String?
+    var stars : Int?
+    var forks : Int?
     
     private enum CodingKeys : String, CodingKey{
         case name = "name"

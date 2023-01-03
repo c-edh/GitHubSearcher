@@ -55,7 +55,7 @@ class DetailViewController: UIViewController,UserViewModelProtocol{
         if let name = detail.name{
             userNameLabel.text = name
             
-            userName.text = "Github:\n" + user.userName
+            userName.text = "Github:\n" + (user.userName ?? "NA")
             userName.numberOfLines = 2
             userName.isHidden = false
 

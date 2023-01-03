@@ -17,7 +17,7 @@ struct K{
         
     }
     
-    static let token = "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"
+    static let token = "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"
 
     struct HeaderFields{
         static let tokenHeader = "token \(token)"
